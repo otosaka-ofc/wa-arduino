@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@serialport/bindings-cpp'
+  - '@whiskeysockets/baileys'
+  - esbuild
+  - protobufjs
+  - sharp
