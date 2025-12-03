@@ -1,14 +1,12 @@
-// import { SerialPort } from "serialport";
+import { SerialPort } from "serialport";
 
-// let port: SerialPort | undefined;
-
-// try {
-//     port = new SerialPort({
-//         path: "COM3",
-//         baudRate: 9600,
-//     });
-// } catch (error) {
-//     console.error("Error opening serial port:", error);
-// }
-
-// export default port;
+export function createPort(options: {
+    path: "COM1" | "COM2" | "COM3";
+    baudRate: number;
+}): SerialPort {
+    const port: SerialPort = new SerialPort({
+        path: options.path,
+        baudRate: options.baudRate,
+    });
+    return port;
+}
