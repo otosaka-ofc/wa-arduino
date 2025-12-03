@@ -109,6 +109,17 @@ async function init(): Promise<void> {
                                     { quoted: msg }
                                 );
                                 break;
+                            case "info":
+                                await sock.sendMessage(
+                                    msg.key.remoteJid!,
+                                    {
+                                        text: `You are using Baileys WA v${version.join(
+                                            "."
+                                        )}`,
+                                    },
+                                    { quoted: msg }
+                                );
+                                break;
                             default:
                                 await sock.sendMessage(
                                     msg.key.remoteJid!,

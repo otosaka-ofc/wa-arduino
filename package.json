@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.24.0",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/qrcode-terminal": "^0.12.2",
